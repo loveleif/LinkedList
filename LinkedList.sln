@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkedList", "LinkedList\LinkedList.vcxproj", "{CE2C2B35-04EB-4706-B94C-C1AD2103B5EA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkedListTest", "LinkedListTest\LinkedListTest.vcxproj", "{52319E76-B58E-4E8F-A083-F9C216A52EE9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE2C2B35-04EB-4706-B94C-C1AD2103B5EA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CE2C2B35-04EB-4706-B94C-C1AD2103B5EA}.Debug|Win32.Build.0 = Debug|Win32
+		{CE2C2B35-04EB-4706-B94C-C1AD2103B5EA}.Release|Win32.ActiveCfg = Release|Win32
+		{CE2C2B35-04EB-4706-B94C-C1AD2103B5EA}.Release|Win32.Build.0 = Release|Win32
+		{52319E76-B58E-4E8F-A083-F9C216A52EE9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{52319E76-B58E-4E8F-A083-F9C216A52EE9}.Debug|Win32.Build.0 = Debug|Win32
+		{52319E76-B58E-4E8F-A083-F9C216A52EE9}.Release|Win32.ActiveCfg = Release|Win32
+		{52319E76-B58E-4E8F-A083-F9C216A52EE9}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
