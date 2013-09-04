@@ -11,7 +11,7 @@ namespace LinkedListTest
 		
 		TEST_METHOD(PushFront_PopBack)
 		{
-			LinkedList list = LinkedList();
+			LinkedList<int> list = LinkedList<int>();
       list.PushFront(1);
       Assert::AreEqual(list.Size(), 1);
       list.PushFront(2);
@@ -31,7 +31,7 @@ namespace LinkedListTest
 
     TEST_METHOD(PushBack_PopFront)
     {
-			LinkedList list = LinkedList();
+			LinkedList<int> list = LinkedList<int>();
       list.PushBack(1);
       Assert::AreEqual(list.Size(), 1);
       list.PushBack(2);
