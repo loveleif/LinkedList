@@ -2,6 +2,9 @@
 
 #include "stdafx.h"
 
+/*
+ * Represents one node in a double linked list.
+ */
 template <class T>
 class Node {
 public:
@@ -11,11 +14,13 @@ public:
 
   Node(): data(NULL), prev(NULL), next(NULL) { }
   Node(T data, Node* prev, Node* next) : data(data), prev(prev), next(next) { }
-  // TODO: Add destructor
   Node<T>* InsertAfter(T data);
   Node<T>* InsertBefore(T data);
 };
 
+/*
+ * Double linked list.
+ */
 template <class T>
 class LinkedList {
 private:
@@ -24,7 +29,7 @@ private:
   int size;
 public:
   LinkedList(): last(NULL), first(NULL), size(0) { }
-  // TODO: Add destructor
+  ~LinkedList();
   Node<T>* PushFront(T data);
   Node<T>* PushBack(T data);
   T PopFront();
@@ -66,6 +71,16 @@ Node<T>* Node<T>::InsertBefore(T data) {
 template <class T>
 Node<T>* Node<T>::InsertAfter(T data) {
   return NodeInsert(this, this->next, data);
+}
+
+template <class T>
+LinkedList<T>::~LinkedList() {
+  auto tmp = first;
+  while (first != NULL) {
+    tmp = first;
+    first = first->next;
+    delete tmp;
+  }
 }
 
 template <class T>
