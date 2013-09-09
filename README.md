@@ -1,4 +1,4 @@
 LinkedList
 ==========
 
-A very basic double linked list implemented in C++ as part of a programming course.
+A very basic C++ implementation of a double linked list that I made as an assignment in a programming course.
